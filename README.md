@@ -3,8 +3,8 @@ This repo is the official Pytorch implementation of paper: "[Machine Learning fo
 
 # Code
 
-readdata.py: read data from the 
-model.py:
-baseline.py:
-run.py
+readdata.py: read simulated traffic data from the dally
+model.py: ADP-LSTM model class
+algorithm.py:implementatio  
+run.py: 
 utilis.py
