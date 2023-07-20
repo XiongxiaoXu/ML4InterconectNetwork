@@ -46,6 +46,10 @@ To get the result of ARIMA, run the following script:
 # Experimental Results
 ![image](https://github.com/XiongxiaoXu/ML-SurrogateModel/assets/34889516/02bf5da7-80df-4493-8c6b-c716bca13334)
 
+![image](https://github.com/XiongxiaoXu/ML-SurrogateModel/assets/34889516/d49e53db-8d3c-45da-859c-b0f8e6e0e2e8)
 
+![image](https://github.com/XiongxiaoXu/ML-SurrogateModel/assets/34889516/c1a696fb-7135-4a9b-b04c-920ea2b410c5)
+
+# Cite
 
 
