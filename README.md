@@ -32,11 +32,11 @@ First, you can read data from the raw simulated traffic data.
 
 `python readdata.py --placement cont-adp`
 
-Then you can get all per-port data with cont-adp setting in the folder './Data/cont-adp'.
 
 To get the result of ADP-LSTM, run the following script:
 
 `python run.py --RIDPID R0L0 --placement cont-adp --method ADPLSTM --backward_window_size 13 --forward_window_size 1`
+
 
 To get the result of ARIMA, run the following script:
 
