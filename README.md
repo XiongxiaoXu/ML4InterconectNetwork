@@ -59,5 +59,13 @@ To investigate the effect of the delay steps on forecast accuray, e.g., set the 
 ## Cite
 If you find this repository useful for your work, please consider citing it as follows:
 
-
+```bibtex
+@inproceedings{xu2023machine,
+  title={Machine Learning for Interconnect Network Traffic Forecasting: Investigation and Exploitation},
+  author={Xu, Xiongxiao and Wang, Xin and Cruz-Camacho, Elkin and D. Carothers, Christopher and A. Brown, Kevin and B. Ross, Robert and Lan, Zhiling and Shu, Kai},
+  booktitle={Proceedings of the 2023 ACM SIGSIM Conference on Principles of Advanced Discrete Simulation},
+  pages={133--137},
+  year={2023}
+}
+```
 
