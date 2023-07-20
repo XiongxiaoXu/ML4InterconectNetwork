@@ -4,6 +4,9 @@ This repo is the official Pytorch implementation of paper: "[Machine Learning fo
 # Abstract
 Interconnect networks play a key role in high-performance computing (HPC) systems. Parallel discrete event simulation (PDES) has been a long-standing pillar for studying large-scale networking systems by replicating the real-world behaviors of HPC facilities. However, the simulation requirements and computational complexity of PDES are growing at an intractable rate. An active research topic is to build a surrogate-ready PDES framework where an accurate surrogate model built on machine learning can be used to forecast network traffic for improving PDES. In this paper, we make the first attempt to introduce two representative time series methods, the Autoregressive Integrated Moving Average (ARIMA) and the Adaptive Long Short-Term Memory (ADP-LSTM), to forecast the traffic in interconnect networks, using the Dragonfly system as a representative example. The proposed ADP-LSTM can efficiently adapt to the ever-changing network traffic, facilitating the forecasting capability for intricate network traffic, by incorporating a novel online learning strategy. Our preliminary analysis demonstrates promising results and shows that ADP-LSTM can consistently outperform ARIMA with significantly less time overhead.
 
+# Network Topology
+The Dragonfly network (see Figure 1) has a hierarchical design, consisting of the all-to-all inter-group connection and intra-group connection. In the network, the 72 compute nodes and 36 routers are averagely divided into 9 groups, which are all-to-all connected. Within a group, the routers are also all-to-all connected. Each router has 7 ports, including 2 terminal ports, 3 local ports, and 2 global ports. The total number of ports is 252.
+![image](https://github.com/XiongxiaoXu/ML-SurrogateModel/assets/34889516/0801eaab-bcd6-4365-9131-2b1a2abb9b04)
 
 
 
