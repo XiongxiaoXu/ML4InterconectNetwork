@@ -32,6 +32,7 @@ First, you can read data from the raw simulated traffic data.
 
 `python readdata.py --placement cont-adp`
 
+**Run the algorithms**
 
 To get the result of ADP-LSTM, run the following script:
 
@@ -41,6 +42,9 @@ To get the result of ADP-LSTM, run the following script:
 To get the result of ARIMA, run the following script:
 
 `python run.py --RIDPID R0L0 --placement cont-adp --method ARIMA --backward_window_size 200 --forward_window_size 1`
+
+# Experimental Results
+![image](https://github.com/XiongxiaoXu/ML-SurrogateModel/assets/34889516/02bf5da7-80df-4493-8c6b-c716bca13334)
 
 
 
