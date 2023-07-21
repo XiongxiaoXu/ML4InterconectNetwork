@@ -71,21 +71,6 @@ If you find this repository useful for your work, please consider citing the pap
   pages={133--137},
   year={2023}
 }
-
-@inproceedings{cruz2023hybrid,
-  title={Hybrid PDES Simulation of HPC Networks Using Zombie Packets},
-  author={Cruz-Camacho, Elkin and Brown, Kevin A and Wang, Xin and Xu, Xiongxiao and Shu, Kai and Lan, Zhiling and Ross, Robert B and Carothers, Christopher D},
-  booktitle={Proceedings of the 2023 ACM SIGSIM Conference on Principles of Advanced Discrete Simulation (Orlando, FL, USA)(SIGSIM-PADS’23). Association for Computing Machinery, New York, NY, USA},
-  year={2023}
-}
-
-@inproceedings{xu2023exploring,
-  title={Exploring Machine Learning Models with Spatial-Temporal Information for Interconnect Network Traffic Forecasting},
-  author={Xu, Xiongxiao},
-  booktitle={Proceedings of the 2023 ACM SIGSIM Conference on Principles of Advanced Discrete Simulation},
-  pages={56--57},
-  year={2023}
-}
 ```
 
 
