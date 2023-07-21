@@ -50,7 +50,7 @@ To get the result of ARIMA, run the following script:
 ### Sentistity Analysis
 To investigate the effect of the delay steps on forecast accuray, e.g., set the number of delay stpes as 3, run the following script:
 
-`python run.py --RIDPID R0L0 --placement cont-adp --method ADPLSTM --backward_window_size 13 --forward_window_size 1 --num_lagstep 3`
+`python run.py --RIDPID R0L0 --placement cont-adp --method ADPLSTM --backward_window_size 13 --forward_window_size 1 --num_lagstep 5`
 
 ## Experimental Results
 ![image](https://github.com/XiongxiaoXu/ML-SurrogateModel/assets/34889516/b6a1b346-0f44-4908-871e-7601a8e1c644)
@@ -61,7 +61,7 @@ To investigate the effect of the delay steps on forecast accuray, e.g., set the 
 ![image](https://github.com/XiongxiaoXu/ML-SurrogateModel/assets/34889516/7b09dc26-90fd-4f1e-ab86-1d6bdd830b42)
 
 ## Cite
-If you find this repository useful for your work, please consider citing the papers as follows:
+If you find this repository useful for your work, please consider citing the paper as follows:
 
 ```bibtex
 @inproceedings{xu2023machine,
