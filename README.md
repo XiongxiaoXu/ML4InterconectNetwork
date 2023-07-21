@@ -53,12 +53,12 @@ To investigate the effect of the delay steps on forecast accuray, e.g., set the 
 `python run.py --RIDPID R0L0 --placement cont-adp --method ADPLSTM --backward_window_size 13 --forward_window_size 1 --num_lagstep 3`
 
 ## Experimental Results
-![image](https://github.com/XiongxiaoXu/ML-SurrogateModel/assets/34889516/02bf5da7-80df-4493-8c6b-c716bca13334)
+![image](https://github.com/XiongxiaoXu/ML-SurrogateModel/assets/34889516/b6a1b346-0f44-4908-871e-7601a8e1c644)
 
 ## Sentistity Analysis
-![image](https://github.com/XiongxiaoXu/ML-SurrogateModel/assets/34889516/d49e53db-8d3c-45da-859c-b0f8e6e0e2e8)
+![image](https://github.com/XiongxiaoXu/ML-SurrogateModel/assets/34889516/1af1e324-296d-4447-b0a5-f5f2cc19e281)
 
-![image](https://github.com/XiongxiaoXu/ML-SurrogateModel/assets/34889516/c1a696fb-7135-4a9b-b04c-920ea2b410c5)
+![image](https://github.com/XiongxiaoXu/ML-SurrogateModel/assets/34889516/7b09dc26-90fd-4f1e-ab86-1d6bdd830b42)
 
 ## Cite
 If you find this repository useful for your work, please consider citing the papers as follows:
