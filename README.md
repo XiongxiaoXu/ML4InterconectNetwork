@@ -8,6 +8,10 @@ Interconnect networks play a key role in high-performance computing (HPC) system
 The Dragonfly network (see the following figure) has a hierarchical design, consisting of the all-to-all inter-group connection and intra-group connection. In the network, the 72 compute nodes and 36 routers are averagely divided into 9 groups, which are all-to-all connected. Within a group, the routers are also all-to-all connected. Each router has 7 ports, including 2 terminal ports, 3 local ports, and 2 global ports. The total number of ports is 252.
 ![image](https://github.com/XiongxiaoXu/ML-SurrogateModel/assets/34889516/0801eaab-bcd6-4365-9131-2b1a2abb9b04)
 
+## ML Surrogate Model
+* ARIMA is a classical statistical time series forecasting method and has been widely adopted in traffic forecasting
+* ADP-LSTM is a varaint of LSTM. It can dynamically update parameters and adapt to the evolving network traffic, by incorporating an online learning strategy into the standard offline learning 
+
 ## Environment
 * python            3.8.13
 * numpy             1.21.5
@@ -46,7 +50,7 @@ To get the result of ARIMA, run the following script:
 ### Sentistity Analysis
 To investigate the effect of the delay steps on forecast accuray, e.g., set the number of delay stpes as 3, run the following script:
 
-`python run.py --RIDPID R0L0 --placement cont-adp --method ARIMA --backward_window_size 200 --forward_window_size 1 --num_lagstep 3`
+`python run.py --RIDPID R0L0 --placement cont-adp --method ADPLSTM --backward_window_size 13 --forward_window_size 1 --num_lagstep 3`
 
 ## Experimental Results
 ![image](https://github.com/XiongxiaoXu/ML-SurrogateModel/assets/34889516/02bf5da7-80df-4493-8c6b-c716bca13334)
@@ -57,7 +61,7 @@ To investigate the effect of the delay steps on forecast accuray, e.g., set the 
 ![image](https://github.com/XiongxiaoXu/ML-SurrogateModel/assets/34889516/c1a696fb-7135-4a9b-b04c-920ea2b410c5)
 
 ## Cite
-If you find this repository useful for your work, please consider citing it as follows:
+If you find this repository useful for your work, please consider citing the papers as follows:
 
 ```bibtex
 @inproceedings{xu2023machine,
@@ -67,5 +71,21 @@ If you find this repository useful for your work, please consider citing it as f
   pages={133--137},
   year={2023}
 }
+
+@inproceedings{cruz2023hybrid,
+  title={Hybrid PDES Simulation of HPC Networks Using Zombie Packets},
+  author={Cruz-Camacho, Elkin and Brown, Kevin A and Wang, Xin and Xu, Xiongxiao and Shu, Kai and Lan, Zhiling and Ross, Robert B and Carothers, Christopher D},
+  booktitle={Proceedings of the 2023 ACM SIGSIM Conference on Principles of Advanced Discrete Simulation (Orlando, FL, USA)(SIGSIM-PADS’23). Association for Computing Machinery, New York, NY, USA},
+  year={2023}
+}
+
+@inproceedings{xu2023exploring,
+  title={Exploring Machine Learning Models with Spatial-Temporal Information for Interconnect Network Traffic Forecasting},
+  author={Xu, Xiongxiao},
+  booktitle={Proceedings of the 2023 ACM SIGSIM Conference on Principles of Advanced Discrete Simulation},
+  pages={56--57},
+  year={2023}
+}
 ```
+
 
