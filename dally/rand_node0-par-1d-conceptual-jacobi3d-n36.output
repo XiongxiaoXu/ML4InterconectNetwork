@@ -1,0 +1,194 @@
+/home/ac.xwang/install/codes-new/bin/model-net-mpi-replay --sync=1 --workload_type=conc-online --lp-io-use-suffix=1 --workload_name=conceptual-jacobi3d --num_net_traces=36 --alloc_file=/home/ac.xwang/workspace/conf/rand_node0-1d-72-jacobi.conf --lp-io-dir=rand_node0-par-1d-conceptual-jacobi3d-n36 -- /home/ac.xwang/workspace/conf/dfdally-72-par.conf 
+
+Tue Jan 31 21:28:42 2023
+
+ROSS Version: v7.2.1
+
+tw_net_start: Found world size to be 1 
+NIC num injection port not specified, setting to 1
+NIC seq delay not specified, setting to 10.000000
+NIC num copy queues not specified, setting to 1
+within node transfer per byte delay is 0.190476
+
+ROSS Core Configuration: 
+	Total PEs                                                    1
+	Total KPs                                          [Nodes (1) x KPs (16)] 16
+	Total LPs                                                  180
+	Simulation End Time                                3600000000000.00
+	LP-to-PE Mapping                                   model defined
+
+
+ROSS Event Memory Allocation:
+	Model events                                             46081
+	Network events                                              16
+	Total events                                             46096
+
+*** START SEQUENTIAL SIMULATION ***
+
+Jacobi3D: Running Jacobi on 36 processors with (4, 3, 3) elements
+Jacobi3D: Array Dimensions: 400 300 300
+Jacobi3D: Block Dimensions: 100 100 100
+Set num_servers per router 2, servers per injection queue per router 2, servers per node copy queue per node 1, num nics 2
+Jacobi3D: Completed 100 iterations
+
+ Network node 0 Rank 12 finished at 458640416.450610 
+ Network node 2 Rank 38 finished at 458640429.729174 
+ Network node 8 Rank 39 finished at 458640525.798846 
+ Network node 6 Rank 3 finished at 458640528.517607 
+ Network node 16 Rank 71 finished at 458640628.005223 
+ Network node 4 Rank 65 finished at 458640628.870486 
+ Network node 7 Rank 70 finished at 458640729.249327 
+ Network node 34 Rank 13 finished at 458640824.419585 
+ Network node 14 Rank 8 finished at 458640827.015652 
+ Network node 1 Rank 24 finished at 458640827.809764 
+ Network node 12 Rank 48 finished at 458640829.002403 
+ Network node 9 Rank 11 finished at 458640831.992230 
+ Network node 20 Rank 49 finished at 458640831.997975 
+ Network node 18 Rank 6 finished at 458640832.250053 
+ Network node 22 Rank 32 finished at 458640931.404427 
+ Network node 32 Rank 52 finished at 458640932.658419 
+ Network node 3 Rank 2 finished at 458640934.148736 
+ Network node 10 Rank 69 finished at 458640938.034934 
+ Network node 30 Rank 15 finished at 458641027.053906 
+ Network node 24 Rank 61 finished at 458641033.623266 
+ Network node 5 Rank 18 finished at 458641034.843464 
+ Network node 25 Rank 46 finished at 458641135.746183 
+ Network node 19 Rank 1 finished at 458641137.646142 
+ Network node 35 Rank 25 finished at 458641225.672307 
+ Network node 15 Rank 45 finished at 458641229.930319 
+ Network node 17 Rank 55 finished at 458641235.567980 
+ Network node 21 Rank 68 finished at 458641236.041946 
+ Network node 26 Rank 23 finished at 458641238.925515 
+ Network node 23 Rank 5 finished at 458641336.387081 
+ Network node 28 Rank 7 finished at 458641338.376535 
+ Network node 33 Rank 28 finished at 458641443.334489 
+ Network node 13 Rank 21 finished at 458641446.689364 
+ Network node 11 Rank 67 finished at 458641542.460745 
+ Network node 31 Rank 62 finished at 458641630.640865 
+ Network node 27 Rank 9 finished at 458641641.185606 
+ Network node 29 Rank 26 finished at 458641644.028839 *** END SIMULATION ***
+
+
+	: Running Time = 157.5845 seconds
+
+TW Library Statistics:
+	Total Events Processed                                98285576
+	Events Aborted (part of RBs)                                 0
+	Events Rolled Back                                           0
+	Event Ties Detected in PE Queues                             2
+	Efficiency                                              100.00 %
+	Total Remote (shared mem) Events Processed                   0
+	Percent Remote Events                                     0.00 %
+	Total Remote (network) Events Processed                      0
+	Percent Remote Events                                     0.00 %
+
+	Total Roll Backs                                             0
+	Primary Roll Backs                                           0
+	Secondary Roll Backs                                         0
+	Fossil Collect Attempts                                      0
+	Total GVT Computations                                       0
+
+	Net Events Processed                                  98285576
+	Event Rate (events/sec)                               623700.8
+	Total Events Scheduled Past End Time                         0
+
+TW Memory Statistics:
+	Events Allocated                                         46097
+	Memory Allocated                                         40195
+	Memory Wasted                                              291
+
+TW Data Structure sizes in bytes (sizeof):
+	PE struct                                                  616
+	KP struct                                                  144
+	LP struct                                                  136
+	LP Model struct                                             96
+	LP RNGs                                                     80
+	Total LP                                                   312
+	Event struct                                               152
+	Event struct with Model                                    888
+
+TW Clock Cycle Statistics (MAX values in secs at 1.0000 GHz):
+	Initialization                                          0.2183
+	Priority Queue (enq/deq)                               38.7236
+	AVL Tree (insert/delete)                                0.0000
+	LZ4 (de)compression                                     0.0000
+	Buddy system                                            0.0000
+	Event Processing                                        0.0000
+	Event Cancel                                            0.0000
+	Event Abort                                             0.0000
+
+	GVT                                                     0.0000
+	Fossil Collect                                          0.0000
+	Primary Rollbacks                                       0.0000
+	Network Read                                            0.0000
+	Other Network                                           0.0000
+	Instrumentation (computation)                           0.0000
+	Instrumentation (write)                                 0.0000
+	Total Time (Note: Using Running Time above for Speedup)    330.1629
+
+TW GVT Statistics: MPI AllReduce
+	GVT Interval                                                16
+	GVT Real Time Interval (cycles)                    0
+	GVT Real Time Interval (sec)                        0.00000000
+	Batch Size                                                  16
+
+	Forced GVT                                                   0
+	Total GVT Computations                                       0
+	Total All Reduce Calls                                       0
+	Average Reduction / GVT                                   -nan
+
+ Total bytes sent 21600134400 recvd 21600134400 
+ max runtime 458641644.028839 ns avg runtime 458641027.375278 
+ max comm time 258641644.028839 avg comm time 258641027.375278 
+ max send time 1020503245.161880 avg send time 908790478.748816 
+ max recv time 950232827.553691 avg recv time 907107752.744977 
+ max wait time 239538666.680567 avg wait time 226832709.768868 
+LP-IO: writing output to rand_node0-par-1d-conceptual-jacobi3d-n36-36024-1675222122/
+LP-IO: data files:
+   rand_node0-par-1d-conceptual-jacobi3d-n36-36024-1675222122/dragonfly-router-busytime-sample
+   rand_node0-par-1d-conceptual-jacobi3d-n36-36024-1675222122/dragonfly-router-traffic-sample
+   rand_node0-par-1d-conceptual-jacobi3d-n36-36024-1675222122/dragonfly-router-send-msgs
+   rand_node0-par-1d-conceptual-jacobi3d-n36-36024-1675222122/dragonfly-router-recv-msgs
+   rand_node0-par-1d-conceptual-jacobi3d-n36-36024-1675222122/model-net-category-high
+   rand_node0-par-1d-conceptual-jacobi3d-n36-36024-1675222122/dragonfly-cn-stats
+   rand_node0-par-1d-conceptual-jacobi3d-n36-36024-1675222122/dragonfly-link-stats
+   rand_node0-par-1d-conceptual-jacobi3d-n36-36024-1675222122/model-net-category-all
+   rand_node0-par-1d-conceptual-jacobi3d-n36-36024-1675222122/avg-all-reduce-time
+   rand_node0-par-1d-conceptual-jacobi3d-n36-36024-1675222122/mpi-replay-stats
+
+------------------ Dragonfly Dally Parameters ---------
+	num_routers =            4
+	local_bandwidth =        5.25
+	global_bandwidth =       4.70
+	cn_bandwidth =           5.25
+	num_vcs =                4
+	num_qos_levels =         1
+	local_vc_size =          16384
+	global_vc_size =         16384
+	cn_vc_size =             32768
+	chunk_size =             4096
+	num_cn =                 2
+	intra_grp_radix =        3
+	num_groups =             9
+	virtual radix =          7
+	total_routers =          36
+	total_terminals =        72
+	num_global_channels =    2
+	cn_delay =               726.61
+	local_delay =            726.61
+	global_delay =           811.64
+	local credit_delay =     1.42
+	global credit_delay =    1.42
+	cn credit_delay =        1.42
+	router_delay =           100.00
+	routing =                PROG_ADAPTIVE
+	adaptive_threshold =     0
+	max hops notification =  2147483647
+------------------------------------------------------
+
+
+Average number of hops traversed 4.269633 average chunk latency 36.355682 us maximum chunk latency 559.110568 us avg message size 556245.750000 bytes finished messages 38832 finished chunks 5309232
+
+ADAPTIVE ROUTING STATS: 2592537 chunks routed minimally 2716695 chunks routed non-minimally completed packets 5309232 
+
+Total packets generated 5309232 finished 5309232 Locally routed- same router 49006 different-router 491442 Remote (inter-group) 4768784 
