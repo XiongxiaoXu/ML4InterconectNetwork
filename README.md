@@ -1,4 +1,4 @@
-# Machine Learning for Interconnect Network Traffic Forecasting: Investigation and Exploitation. (SIGSIM-PADS 2023).
+# Machine Learning for Interconnect Network Traffic Forecasting: Investigation and Exploitation. (ACM SIGSIM-PADS 2023).
 The official code for paper: "[Machine Learning for Interconnect Network Traffic Forecasting: Investigation and Exploitation](https://xiongxiaoxu.github.io/publications/PADS23_ML.pdf)".
 
 ## Abstract
